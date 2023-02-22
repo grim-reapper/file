@@ -1,0 +1,39 @@
+{
+  "name": "imran/file",
+  "description": "A PHP class to work with files.",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "imran ali",
+      "email": "imran.ali125@yahoo.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+      "php": ">=8.0",
+      "ext-fileinfo": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Imran\\File\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Imran\\File\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
